@@ -70,14 +70,14 @@ function startGame() {
                 }
 
             }
-            if (player1Score === 3) {
+            if (player1Score === 5) {
                 btn.addEventListener('click', newGame);
                 title.innerHTML = `Winner "${symbol}"<br>${player1Score} - ${player2Score}`;
                 stopGame();
                 startGame();
                 clearInputs();
             }
-            if (player2Score === 3) {
+            if (player2Score === 5) {
                 btn.addEventListener('click', newGame);
                 title.innerHTML = `Winner "${symbol}"<br>${player1Score} - ${player2Score} `;
                 stopGame();
